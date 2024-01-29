@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:self_stack/splashScreen.dart';
 import 'homepage.dart';
 
 class login_details extends StatefulWidget {
@@ -297,10 +296,10 @@ class _login_detailsState extends State<login_details> {
                         cursorColor: Colors.white,
                         decoration: InputDecoration(suffixIcon: IconButton(onPressed: (){
                           setState(() {
-                            if(button==Icon(Icons.visibility_off)){
-                              button=Icon(Icons.visibility);
+                            if(button==const Icon(Icons.visibility_off)){
+                              button=const Icon(Icons.visibility);
                             }else{
-                              button=Icon(Icons.visibility);
+                              button=const Icon(Icons.visibility);
                             }
                             if(textvisibility==true){
                               textvisibility=false;

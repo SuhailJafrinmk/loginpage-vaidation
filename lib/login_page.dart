@@ -27,6 +27,13 @@ class _login_detailsState extends State<login_details> {
       body: Center(
         child: Container(
           decoration: BoxDecoration(
+            gradient: LinearGradient(colors: [
+              Colors.black,
+              Color.fromRGBO(28, 102, 19, 1),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            ),
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
                 color: Colors.black,

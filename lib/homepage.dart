@@ -1,5 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'login_page.dart';
+
 
 class homepage extends StatelessWidget {
   homepage({super.key});
@@ -23,10 +25,11 @@ class homepage extends StatelessWidget {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        color: Colors.black,
+       color: Colors.black,
+        
         child: ListView(
           children: <Widget>[
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ListTile(
@@ -34,86 +37,86 @@ class homepage extends StatelessWidget {
                 
               },
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage('assets/images/angular.png'),
               ),
-              title: Text('angular'),
+              title: const Text('angular'),
             ),
             Divider(color: dividerColor,),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage('assets/images/cyber.jpg'),
               ),
-              title: Text('cyber security'),
+              title: const Text('cyber security'),
             ),
             Divider(
             color: dividerColor,
             ),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading:const CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage('assets/images/flutter.png'),
               ),
-              title: Text('flutter'),
+              title:const Text('flutter'),
             ),
             Divider(
               color: dividerColor,
             ),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage('assets/images/java.jpg'),
               ),
-              title: Text('java devolepment'),
+              title:const  Text('java devolepment'),
             ),
             Divider(
               color: dividerColor,
             ),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage('assets/images/mean.jpg'),
               ),
-              title: Text('mean stack devolepment'),
+              title: const Text('mean stack devolepment'),
             ),
             Divider(
               color: dividerColor,
             ),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                   radius: 30,
                   backgroundImage: AssetImage('assets/images/mern.png')),
-              title: Text('mern stack devolepment'),
+              title:const Text('mern stack devolepment'),
             ),
             Divider(
               color: dividerColor,
             ),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 radius: 30,
                 backgroundImage: AssetImage('assets/images/Python.png',
                 
                 ),
               ),
-              title: Text('python-django devolepment'),
+              title: const Text('python-django devolepment'),
             ),
             Divider(
               color: dividerColor,
             ),
             ListTile(
               textColor: textcolour,
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                   radius: 30,
                   backgroundImage: AssetImage('assets/images/React.png')),
-              title: Text('front-end devolepment using react'),
+              title: const Text('front-end devolepment using react'),
             ),
           ],
         ),
